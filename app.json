@@ -11,8 +11,8 @@
     "youtube-dl",
     "leecher"
   ],
-  "repository": "https://github.com/SayanthD/torrent-leecher",
-  "website": "https://github.com/SayanthD/torrent-leecher",
+  "repository": "https://github.com/nimma0001/lech2",
+  "website": "https://github.com/nimma0001/lech2",
   "env": {
     "ENV": {
       "description": "Setting this to ANYTHING will enable webhooks when in env mode",
