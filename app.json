@@ -59,7 +59,7 @@
   "buildpacks": [{
     "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
   }, {
-    "url": "https://github.com/P3TERX/aria2-builder"
+    "url": "https://github.com/SayanthD/aria2-heroku"
   }, {
     "url": "heroku/python"
   }],
