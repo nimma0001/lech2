@@ -40,14 +40,14 @@ async def aria_start():
     aria2_daemon_start_cmd.append("--max-connection-per-server=16")
     aria2_daemon_start_cmd.append("--min-split-size=10M")
     aria2_daemon_start_cmd.append("--rpc-listen-all=false")
-    aria2_daemon_start_cmd.append(f"--rpc-listen-port={ARIA_TWO_STARTED_PORT}")
+    aria2_daemon_start_cmd.append("--rpc-listen-port=6801")
     aria2_daemon_start_cmd.append("--rpc-max-request-size=1024M")
-    aria2_daemon_start_cmd.append("--seed-ratio=1.0")
-    aria2_daemon_start_cmd.append("--seed-time=0.5")
+    aria2_daemon_start_cmd.append("--seed-ratio=2.0")
+    aria2_daemon_start_cmd.append("--seed-time=480")
     aria2_daemon_start_cmd.append("--split=16")
     aria2_daemon_start_cmd.append("--uri-selector=adaptive")
     aria2_daemon_start_cmd.append("--file-allocation=falloc")
-    aria2_daemon_start_cmd.append(f"--bt-stop-timeout={MAX_TIME_TO_WAIT_FOR_TORRENTS_TO_START}")
+    aria2_daemon_start_cmd.append("--bt-stop-timeout=1000")
     #
     LOGGER.info(aria2_daemon_start_cmd)
     #
